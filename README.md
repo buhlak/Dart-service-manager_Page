@@ -1,15 +1,16 @@
 # Landing-page_Dart-service-manager
+<strong>
+Одностраничный сайт, рекламной тематики. <br/>
+Полностью адаптивный (ширина 440px+)(частично - ширина 370px+). <br/>
+Кроссбраузерная адаптация / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /. <br/>
+Технологии - scss, js native (ES 5, ES 6).<br/>
+Методологии - БЭМ. <br/>
+Инструменты - таск-менеджер Gulp (для сборки). <br/>
 
-Одностраничный сайт, рекламной тематики.
-Полностью адаптивный (ширина 440px+)(частично - ширина 370px+).
-Кроссбраузерная адаптация / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /.
-Технологии - scss, js native (ES 5, ES 6).
-Методологии - БЭМ.
-Инструменты - таск-менеджер Gulp (для сборки).
-
-Landing page, advertising topics. 
-Fully adaptive (440px + width)(partially 370px + width). 
-Crossbrowser adaptive / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ / 
-Technologies - scss, js native (ES 5, ES 6) 
-Methodologies - BEM 
-Tools - Gulp Task Manager (for bundling)
+Landing page, advertising topics. <br/>
+Fully adaptive (440px + width)(partially 370px + width). <br/>
+Crossbrowser adaptive / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /. <br/>
+Technologies - scss, js native (ES 5, ES 6). <br/> 
+Methodologies - BEM. <br/>
+Tools - Gulp Task Manager (for bundling). <br/>
+</strong>
