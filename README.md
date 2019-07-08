@@ -6,7 +6,7 @@
 Технологии - scss, js native (ES 5, ES 6).<br/>
 Методологии - БЭМ. <br/>
 Инструменты - таск-менеджер Gulp (для сборки). <br/>
-
+<br/>
 Landing page, advertising topics. <br/>
 Fully adaptive (440px + width)(partially 370px + width). <br/>
 Crossbrowser adaptive / GoogleChrome+ / Firefox+ / Edge+ / IE- / Opera+ /. <br/>
