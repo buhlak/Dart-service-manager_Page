@@ -1,0 +1,119 @@
+.feedback-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__scroll-arrow {
+    @include background_size_repeat_pos(auto, no-repeat, center);
+    width: 75px;
+    height: 65px;
+    position: absolute;
+    margin-left: 50px;
+
+    &--up {
+      top: 35px;
+      background-image: url("../img/keyboard_arrow_up.png");
+    }
+
+    &--down {
+      bottom: 35px;
+      background-image: url("../img/keyboard_arrow_down.png");
+    }
+  }
+
+  &__item-wrapper {
+    padding: 10px 10px 10px 100px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item-wrapper-overflow {
+    max-height: 397px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+    padding: 32px 30px 27px 30px;
+    margin-bottom: 75px;
+    position: relative;
+    background-color: $color-white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  &__person-name {
+    @include font-size-weight($font-size-18, $font-weight-800);
+    text-transform: capitalize;
+    font-family: $font-family-Raleway;
+    color: $color-d-gray;
+  }
+
+  .slider-item {
+    &:before {
+      @include background_size_repeat_pos(cover, no-repeat, center);
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      left: -90px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &--1:before {
+      background-image: url("../img/feedback_client-photo-1.png");
+    }
+
+    &--2:before {
+      background-image: url("../img/feedback_client-photo-2.png");
+    }
+
+    &--3:before {
+      background-image: url("../img/feedback_client-photo-3.png");
+    }
+
+    &--4:before {
+      background-image: url("../img/feedback_client-photo-4.png");
+    }
+  }
+}
+
+@media (max-width: $lg - 1) {
+  .feedback-slider {
+    &__item-wrapper-overflow {
+      max-height: 480px;
+    }
+  }
+}
+
+@media (max-width: $md - 1) {
+  .feedback-slider {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &__item-wrapper-overflow {
+      max-height: 2000px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      padding: 20px;
+    }
+
+    &__scroll-arrow {
+      display: none;
+    }
+  }
+}

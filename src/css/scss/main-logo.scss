@@ -1,0 +1,38 @@
+.main-logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+    &--logo-slogan-hover:hover .main-logo__slogan-1-part {
+      color: $color-d-gray;
+      opacity: 0.5;
+    }
+
+  &--margin-pos {
+    margin-bottom: 25px;
+  }
+
+  &__slogan {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: $font-family-Raleway;
+    color: $color-d-white;
+
+  }
+
+  &__slogan-1-part {
+    @include font-size-weight($font-size-15, $font-weight-400);
+  }
+
+  &__slogan-2-part {
+    @include font-size-weight($font-size-15, $font-weight-700);
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .main-logo {
+    padding-right: 10px;
+  }
+}

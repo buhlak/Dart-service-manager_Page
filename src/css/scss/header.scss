@@ -1,0 +1,33 @@
+.header {
+  @include background_size_repeat_pos(cover, no-repeat, center);
+  background-image: url("../img/background-header-gradient.svg"), url("../img/background-header.jpg");
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  &__description {
+    padding: 190px 0 160px 0;
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .header__description {
+    position: relative;
+  }
+}
+
+
+
+
+
+
+

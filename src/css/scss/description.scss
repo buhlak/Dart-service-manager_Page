@@ -1,0 +1,226 @@
+@mixin mt_mb_line-h_text-a($margin-top, $margin-bottom, $line-height, $text-align) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+  line-height: $line-height;
+  text-align: $text-align;
+}
+
+@mixin display_just-cont_f-direct($display, $justify-content, $flex-direction) {
+  display: $display;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+.description {
+  @include display_just-cont_f-direct(flex, center, row);
+  flex-wrap: wrap;
+  font-family: $font-family-Raleway;
+
+  &--header-description {
+    @include display_just-cont_f-direct(flex, center, column);
+    max-width: 583px;
+    padding-right: 5px;
+  }
+
+  &--advantages-header {
+    @include display_just-cont_f-direct(flex, center, column);
+    max-width: 583px;
+  }
+
+  &--advantages-notes {
+    @include display_just-cont_f-direct(flex, center, column);
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  &--services {
+    @include display_just-cont_f-direct(flex, center, column);
+    max-width: 583px;
+    padding: 0 10px;
+  }
+
+  &--feedback-description {
+    @include display_just-cont_f-direct(flex, center, column);
+    max-width: 520px;
+    padding: 130px 0;
+  }
+
+  &--feedback-slider {
+    @include display_just-cont_f-direct(flex, left, column);
+  }
+
+  &--our-team {
+    @include display_just-cont_f-direct(flex, center, column);
+    max-width: 600px;
+  }
+
+  &--team-cards {
+    @include display_just-cont_f-direct(flex, center, column);
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+
+
+    &--active {
+      display: flex;
+      opacity: 1;
+      transition: opacity 0.3s ease-in;
+    }
+  }
+
+  &__title {
+    @include font-size-weight($font-size-45, $font-weight-600);
+    text-transform: capitalize;
+    color: $color-d-gray;
+
+    &--header-description {
+      @include mt_mb_line-h_text-a(0, 10px, 65px, left);
+      @include font-size-weight($font-size-55, $font-weight-800);
+      max-width: 80%;
+      text-transform: uppercase;
+      color: $color-d-white;
+    }
+
+    &--advantages-header {
+      @include mt_mb_line-h_text-a(0, 0, 45px, center);
+      @include font-size-weight($font-size-45, $font-weight-600);
+      text-transform: capitalize;
+      color: $color-d-gray;
+
+      &--subtitle {
+        @include font-size-weight($font-size-25, $font-weight-600);
+        color: $color-grayish-white;
+      }
+    }
+
+    &--advantages-notes-logo {
+      @include background_size_repeat_pos(auto, no-repeat, center);
+      width: 80px;
+      height: 80px;
+
+      &--1 {
+        background-image: url("../img/advantages-logo-1.png");
+      }
+
+      &--2 {
+        background-image: url("../img/advantages-logo-2.png");
+      }
+
+      &--3 {
+        background-image: url("../img/advantages-logo-3.png");
+      }
+    }
+
+    &--advantages-notes {
+      @include mt_mb_line-h_text-a(30px, 0, 50px, center);
+      @include font-size-weight($font-size-20, $font-weight-600);
+      text-transform: capitalize;
+      white-space: nowrap;
+      color: $color-d-gray;
+    }
+
+    &--services {
+      @include mt_mb_line-h_text-a(0, 10px, 65px, center);
+      @include font-size-weight($font-size-45, $font-weight-600);
+      text-transform: capitalize;
+      color: $color-d-gray;
+    }
+
+    &--services-about {
+      @include font-size-weight($font-size-15, $font-weight-700);
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+
+    &--feedback-description {
+      @include mt_mb_line-h_text-a(0, 25px, 55px, left);
+      @include font-size-weight($font-size-45, $font-weight-600);
+      max-width: 87%;
+      text-transform: none;
+      color: $color-white;
+    }
+
+    &--our-team {
+      @include mt_mb_line-h_text-a(0, 0, 25px, center);
+      @include font-size-weight($font-size-45, $font-weight-600);
+    }
+
+    &--team-cards {
+      @include mt_mb_line-h_text-a(0, 0, 25px, center);
+      @include font-size-weight($font-size-18, $font-weight-700);
+      text-transform: capitalize;
+      color: $color-d-gray;
+    }
+  }
+
+  &__text {
+    @include mt_mb_line-h_text-a(35px, 0, 25px, center);
+    @include font-size-weight($font-size-15, $font-weight-400);
+    color: $color-d-gray;
+
+    &--header-description {
+      @include mt_mb_line-h_text-a(0, 38px, 35px, left);
+      @include font-size-weight($font-size-18, $font-weight-400);
+      color: $color-d-white;
+    }
+
+    &--advantages-header {
+      @include mt_mb_line-h_text-a(20px, 0, 25px, center);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-grayish-white;
+    }
+
+    &--advantages-notes {
+      @include mt_mb_line-h_text-a(5px, 0, 20px, center);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-metal-gray;
+    }
+
+    &--services {
+      @include mt_mb_line-h_text-a(0, 38px, 25px, center);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-grayish-white;
+    }
+
+    &--services-about {
+      @include mt_mb_line-h_text-a(0, 0, 25px, left);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-d-gray;
+    }
+
+    &--feedback-description {
+      @include mt_mb_line-h_text-a(0, 0, 25px, left);
+      @include font-size-weight($font-size-15, $font-weight-600);
+      color: $color-white;
+    }
+
+    &--feedback-slider {
+      @include mt_mb_line-h_text-a(10px, 0, 25px, left);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-metal-gray;
+    }
+
+    &--our-team {
+      @include mt_mb_line-h_text-a(35px, 0, 25px, center);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-grayish-white;
+    }
+
+    &--team-cards {
+      @include mt_mb_line-h_text-a(20px, 0, 25px, center);
+      @include font-size-weight($font-size-15, $font-weight-400);
+      color: $color-metal-gray;
+    }
+  }
+
+  &__buttons-wrap {
+    display: flex;
+  }
+}

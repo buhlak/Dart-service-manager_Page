@@ -1,0 +1,13 @@
+.logo-icon {
+  @include background_size_repeat_pos(cover, no-repeat, center);
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 3px;
+  background-image: url("../img/logo.png");
+  border-radius: 50% 0 50% 50%;
+  transition: all 0.1s ease;
+  &:hover {
+    box-shadow: -5px 5px 11px 1px rgba(0, 0, 0, 0.2);
+  }
+}

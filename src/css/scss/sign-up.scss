@@ -1,0 +1,20 @@
+.sign-up {
+  @include font-size-weight($font-size-12, $font-weight-400);
+  padding: 6px 17px;
+  border: 1px solid $color-d-white;
+  white-space: nowrap;
+  font-family: $font-family-Raleway;
+  color: $color-d-white;
+
+  &:hover {
+    transition: border-color 0.2s ease;
+    border-color: $color-white;
+    box-shadow: 0 1px 3px 3px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .sign-up {
+    margin-right: 50px;
+  }
+}

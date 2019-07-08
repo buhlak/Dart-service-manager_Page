@@ -1,0 +1,39 @@
+.advantages {
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 90px 80px;
+  }
+
+  &__description-notes-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  &__button {
+    @include font-size-weight($font-size-15, $font-weight-800);
+    margin-top: 80px;
+    background-color: $color-l-green;
+    font-family: $font-family-Raleway;
+    color: $color-d-white;
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .advantages {
+
+    &__container {
+      padding: 70px 40px;
+    }
+
+    &__description-notes-wrap {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+}

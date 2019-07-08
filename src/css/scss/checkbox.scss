@@ -1,0 +1,39 @@
+.checkbox {
+  display: flex;
+  position: relative;
+
+  &__input-elem {
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+  }
+
+  .check {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 3px;
+    border: 2px solid $color-d-gray;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    background-image: url("../img/transparent-icon.png");
+  }
+
+  &__input-elem:checked + .check {
+    transition: all 0.1s ease-in;
+    background-image: url("../img/check-mark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__input-text {
+    @include font-size-weight($font-size-15, $font-weight-400);
+    margin-left: 25px;
+    font-family: $font-family-Raleway;
+    color: $color-d-gray;
+  }
+}

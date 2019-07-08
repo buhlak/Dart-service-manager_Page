@@ -1,0 +1,86 @@
+@media (max-width: $lg - 1) {
+  .description {
+    &--team-cards {
+      top: 220px;
+    }
+
+    &__title {
+      &--header-description {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $md - 1) {
+  .description {
+    &--feedback-description {
+      padding: 100px 0 35px 100px;
+      margin-bottom: 20px;
+    }
+
+    &--team-cards {
+      top: 160px;
+    }
+
+    &__title {
+      &--header-description {
+        @include mt_mb_line-h_text-a(0, 10px, 55px, left);
+        @include font-size-weight($font-size-50, $font-weight-800);
+      }
+    }
+
+    &__text {
+      &--header-description {
+        @include mt_mb_line-h_text-a(0, 40px, 30px, left);
+        @include font-size-weight($font-size-16, $font-weight-400);
+      }
+    }
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .description {
+    &--advantages-notes {
+      margin-top: 30px;
+    }
+
+    &--team-cards {
+      display: flex;
+      top: 140px;
+      opacity: 1;
+    }
+
+    &__title {
+      &--header-description {
+        @include mt_mb_line-h_text-a(0, 10px, 50px, left);
+        @include font-size-weight($font-size-50, $font-weight-700);
+        max-width: 100%;
+        text-transform: uppercase;
+        color: $color-d-white;
+      }
+
+      &--advantages-header {
+        @include font-size-weight($font-size-45, $font-weight-500);
+
+        &--subtitle {
+          @include font-size-weight($font-size-18, $font-weight-500);
+        }
+      }
+
+      &--advantages-notes {
+        margin-top: 20px;
+      }
+
+      &--services {
+        @include mt_mb_line-h_text-a(0, 10px, 55px, center);
+      }
+    }
+
+    &__text {
+      &--services {
+        @include mt_mb_line-h_text-a(0, 10px, 25px, center);
+      }
+    }
+  }
+}

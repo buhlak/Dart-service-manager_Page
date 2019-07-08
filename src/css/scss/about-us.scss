@@ -1,0 +1,32 @@
+.about-us {
+  display: flex;
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-href {
+    text-transform: capitalize;
+    @include font-size-weight($font-size-15, $font-weight-400);
+    font-family: $font-family-Raleway;
+    color: $color-gray;
+    opacity: 0.5;
+
+    &--point-before {
+      margin-left: 30px;
+      position: relative;
+
+      &:before {
+        display: block;
+        content: "";
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        top: 5px;
+        left: -15px;
+        border-radius: 4px;
+        background-color: $color-d-white;
+      }
+    }
+  }
+}

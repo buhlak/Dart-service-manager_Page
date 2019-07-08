@@ -1,0 +1,139 @@
+.nav-menu {
+  position: relative;
+  z-index: 2;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 20px;
+
+    &--margin-pos {
+      margin-right: 50px;
+    }
+  }
+
+  &__item-href {
+    @include font-size-weight($font-size-15, $font-weight-600);
+    padding: 5px;
+    font-family: $font-family-Raleway;
+    text-transform: capitalize;
+    color: $color-d-white;
+    transition: all 0.2s ease;
+
+    &--hover-color-header {
+      &:hover {
+        color: $color-d-gray;
+      }
+    }
+  }
+
+  &__mobile-menu-icon {
+    display: none;
+    @include background_size_repeat_pos(cover, no-repeat, center);
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    background-image: url("../img/menu-icon-light.png");
+    cursor: pointer;
+  }
+}
+
+.footer__nav.nav-menu {
+  .nav-menu__item-href:hover {
+    text-shadow: 0 0 5px $color-white;
+  }
+}
+
+@media (min-width: $sm) and (max-width: $lg - 1) {
+  .header__nav.nav-menu {
+    position: absolute;
+    top: 110px;
+    left: 65px;
+
+    .nav-menu__item {
+      margin: 0 30px;
+    }
+
+    .nav-menu__item-href {
+      @include font-size-weight($font-size-14, $font-weight-600);
+    }
+  }
+  .footer__nav.nav-menu {
+    .nav-menu__item {
+      margin: 0;
+
+      &--margin-pos {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .header__nav.nav-menu {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+
+    .nav-menu__list {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      border-radius: 20px;
+      position: relative;
+      top: 33px;
+      right: 0;
+    }
+
+    .nav-menu__item {
+      margin: 15px 0;
+    }
+
+    .nav-menu__item-href {
+      &--hover-color-header {
+        padding: 10px 1px;
+
+        &:hover {
+          color: $color-d-gray;
+        }
+      }
+    }
+
+    .nav-item__mobile-menu-icon {
+      display: flex;
+      position: absolute;
+      top: -10px;
+    }
+
+    .nav-menu__mobile-menu-icon {
+      @include background_size_repeat_pos(cover, no-repeat, center);
+      display: flex;
+    }
+  }
+
+  .footer__nav.nav-menu {
+    .nav-menu__item {
+      margin: 0;
+
+      &--margin-pos {
+        margin-bottom: 5px;
+      }
+    }
+
+    .nav-menu__item-href {
+      &--hover-color-header {
+        padding: 10px 1px;
+
+        &:hover {
+          color: $color-d-gray;
+        }
+      }
+    }
+  }
+}
+

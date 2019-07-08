@@ -1,0 +1,87 @@
+.market-cards {
+
+  &__container {
+    display: flex;
+    padding: 0;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 40px 40px;
+    display: flex;
+    width: 25%;
+
+    &--color-blue {
+      background-color: $color-blue;
+    }
+
+    &--color-navy {
+      background-color: $color-navy;
+    }
+
+    &--color-purple {
+      background-color: $color-purple;
+    }
+
+    &--color-pink {
+      background-color: $color-pink;
+    }
+  }
+
+  &__logo {
+    @include background_size_repeat_pos(cover, no-repeat, center);
+    width: 60px;
+    height: 60px;
+
+    &--1 {
+      background-image: url("../img/market-cards-1.png");
+    }
+
+    &--2 {
+      background-image: url("../img/market-cards-2.png");
+    }
+
+    &--3 {
+      background-image: url("../img/market-cards-3.png");
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__description-text {
+    @include font-size-weight($font-size-20, $font-weight-800);
+    margin-left: 25px;
+    text-transform: capitalize;
+    font-family: $font-family-Raleway;
+    color: $color-white;
+  }
+}
+
+@media (max-width: $lg - 1) {
+  .market-cards {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: $sm - 1) {
+  .market-cards {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 100%;
+      padding: 20px 40px;
+    }
+  }
+}

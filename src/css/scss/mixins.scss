@@ -1,0 +1,10 @@
+@mixin background_size_repeat_pos($bcg-size, $bcg-repeat, $bcg-pos) {
+  background-size: $bcg-size;
+  background-repeat: $bcg-repeat;
+  background-position: $bcg-pos;
+}
+
+@mixin font-size-weight($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

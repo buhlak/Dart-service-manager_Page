@@ -1,0 +1,65 @@
+@mixin form-item_common-style() {
+  box-sizing: border-box;
+  padding: 15px 10px 15px 20px;
+  border-radius: 5px;
+  border: 1px solid $color-d-gray;
+  background-color: $color-gray-white;
+  outline: none;
+}
+
+@mixin form-item-placeholder_common-style() {
+  text-transform: capitalize;
+  color: $color-d-gray;
+  font-family: $font-family-Raleway;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input-item {
+    @include font-size-weight($font-size-14, $font-weight-500);
+    box-sizing: border-box;
+    padding: 15px 10px 15px 20px;
+    border-radius: 5px;
+    border: 1px solid $color-d-gray;
+    background-color: $color-gray-white;
+    color: $color-d-gray;
+    font-family: $font-family-Raleway;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    &::placeholder {
+      @include form-item-placeholder_common-style;
+    }
+
+    &:focus {
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4),
+            inset 0 0 8px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__personal-data {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+
+  &__user-message {
+    width: 100%;
+    resize: none;
+  }
+
+  &__submit-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
