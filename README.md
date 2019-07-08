@@ -14,3 +14,7 @@ Technologies - scss, js native (ES 5, ES 6). <br/>
 Methodologies - BEM. <br/>
 Tools - Gulp Task Manager (for bundling). <br/>
 </strong>
+<br/>
+<em>В папке src размещена не собранная версия проекта, в паке dist готовая сброрка</em>
+<br/>
+<em>In the src folder there is unbundle version of the project, in the dist folder there is a ready assembly.<em/>
