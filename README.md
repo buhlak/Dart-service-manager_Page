@@ -17,4 +17,4 @@ Tools - Gulp Task Manager (for bundling). <br/>
 <br/>
 <em>В папке src размещена не собранная версия проекта, в паке dist готовая сброрка</em>
 <br/>
-<em>In the src folder there is unbundle version of the project, in the dist folder there is a ready assembly.<em/>
+<em>In the src folder there is unbundle version of the project, in the dist folder there is a production version.<em/>
