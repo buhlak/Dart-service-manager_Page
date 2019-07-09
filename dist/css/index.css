@@ -21,11 +21,11 @@ a {
 
 @media (max-width: 1199px) {
   .container {
-    padding: 0 60px; } }
+    padding: 0 20px; } }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 40px; } }
+    padding: 0 20px; } }
 
 .header {
   background-size: cover;
@@ -97,12 +97,17 @@ a {
     position: relative;
     left: 0; }
     .video__play-button {
-      top: 72px; }
+      top: 57px; }
     .video__play-button-sign {
       display: none; }
     .video__file {
-      width: 375px;
-      height: 200px; } }
+      width: 356.25px;
+      height: 190px; } }
+
+@media (max-width: 380px) {
+  .video__file {
+    width: 300px;
+    height: 160px; } }
 
 .about-us {
   display: flex; }
@@ -174,8 +179,11 @@ a {
     color: #ffffff; }
 
 @media (max-width: 991px) {
-  .button--get-started {
-    margin-top: 20px; } }
+  .button {
+    width: 130px;
+    height: 50px; }
+    .button--get-started {
+      margin-top: 20px; } }
 
 .description {
   display: flex;
@@ -420,7 +428,7 @@ a {
 
 @media (max-width: 991px) {
   .description--feedback-description {
-    padding: 100px 0 35px 100px;
+    padding: 100px 0 35px 5px;
     margin-bottom: 20px; }
   .description--team-cards {
     top: 160px; }
@@ -576,10 +584,10 @@ a {
       display: none;
       flex-direction: column;
       align-items: flex-end;
-      border-radius: 20px;
       position: relative;
       top: 33px;
-      right: 0; }
+      right: 0;
+      border-radius: 20px; }
     .header__nav.nav-menu .nav-menu__item {
       margin: 15px 0; }
     .header__nav.nav-menu .nav-menu__item-href--hover-color-header {
@@ -693,11 +701,11 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 80px 0; }
+  padding: 80px 20px; }
 
 @media (max-width: 767px) {
   .services__container {
-    padding: 60px 0; } }
+    padding: 60px 20px; } }
 
 .services-about {
   max-width: 804px;
@@ -771,12 +779,14 @@ a {
     flex: 1; }
 
 @media (max-width: 767px) {
-  .services-about__card {
-    display: block; }
-  .services-about__photo {
-    float: left; }
-  .services-about__text {
-    display: block; } }
+  .services-about {
+    padding: 26px 0; }
+    .services-about__card {
+      display: block; }
+    .services-about__photo {
+      float: left; }
+    .services-about__text {
+      display: block; } }
 
 .sign-up {
   font-size: 12px;
@@ -822,6 +832,10 @@ a {
   .social-networks--our-team {
     bottom: 40px; } }
 
+@media (max-width: 767px) {
+  .social-networks {
+    margin-top: 15px; } }
+
 .feedback {
   background-size: cover;
   background-repeat: no-repeat;
@@ -847,7 +861,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 250px 0;
+    padding: 100px 20px 250px 20px;
     position: relative; }
 
 .form {
@@ -903,7 +917,7 @@ a {
 
 @media (max-width: 767px) {
   .contact-form__container {
-    padding: 50px 5px 80px 5px; } }
+    padding: 50px 20px 80px 20px; } }
 
 .checkbox {
   display: flex;
@@ -1004,7 +1018,7 @@ a {
       width: 150px;
       height: 150px;
       margin-top: 130px;
-      padding: 0 130px; }
+      padding: 0 80px; }
       .team-cards__photo-wrap:nth-child(1) {
         margin-top: 20px; }
     .team-cards__photo {
@@ -1122,8 +1136,10 @@ a {
 
 @media (max-width: 991px) {
   .footer__container {
-    padding: 80px 40px 150px 40px; } }
+    padding: 80px 20px 150px 20px; } }
 
 @media (max-width: 767px) {
   .footer__container {
-    padding: 40px 20px 100px 20px; } }
+    padding: 40px 20px 100px 20px; }
+  .footer__company-information {
+    flex-direction: column; } }
