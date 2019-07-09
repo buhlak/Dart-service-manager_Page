@@ -59,7 +59,7 @@
     left: 0;
 
     &__play-button {
-      top: 72px;
+      top: 57px;
     }
 
     &__play-button-sign {
@@ -67,8 +67,17 @@
     }
 
     &__file {
-      width: 375px;
-      height: 200px;
+      width: 356.25px;
+      height: 190px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .video {
+    &__file {
+      width: 300px;
+      height: 160px;
     }
   }
 }

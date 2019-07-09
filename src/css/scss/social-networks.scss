@@ -42,3 +42,9 @@
     }
   }
 }
+
+@media (max-width: $sm - 1) {
+  .social-networks {
+    margin-top: 15px;
+  }
+}
