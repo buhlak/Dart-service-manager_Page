@@ -1,4 +1,4 @@
-# Landing-page_Dart-service-manager
+# Dart-service-manager_Page
 <strong>
 Одностраничный сайт, рекламной тематики. <br/>
 Полностью адаптирован под мобильные устройства (ширина экрана 360px+). <br/>
